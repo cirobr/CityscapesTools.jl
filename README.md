@@ -12,14 +12,14 @@ Home page: https://www.cityscapes-dataset.com/
 ### Usage
 
 ```
-using CityscapesTools
+using CityscapesTools; cst=CityscapesTools
 
-classnumber2classname(15)      # should give "bus"
-classname2classnumber("bus")   # should give "15"
+cst.classnumber2classname(15)      # should give "bus"
+cst.classname2classnumber("bus")   # should give "15"
 
-mapping_20[7]                  # should give "0"
-mapping_20[8]                  # should give "1"
-mapping_20[1]                  # should give "255"
+cst.mapping_20[7]                  # should give "0"
+cst.mapping_20[8]                  # should give "1"
+cst.mapping_20[1]                  # should give "255"
 
-encode_labels(mask)            # maps the classes in "mask" to 0:18+255 classes; "mask" is an Int16 array
+cst.encode_labels(mask)            # maps the classes in "mask" to 0:18+255 classes; "mask" is an Int16 array
 ```

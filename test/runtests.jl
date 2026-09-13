@@ -1,4 +1,4 @@
-using CityscapesTools
+using CityscapesTools; cst=CityscapesTools
 using Test
 
 @testset "CityscapesTools.jl" begin
