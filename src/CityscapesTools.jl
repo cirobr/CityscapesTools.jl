@@ -2,7 +2,6 @@ module CityscapesTools
 
 
 using DataStructures
-
 include("main.jl")
 
 
