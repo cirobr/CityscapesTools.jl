@@ -2,5 +2,5 @@ using CityscapesTools
 using Test
 
 @testset "CityscapesTools.jl" begin
-    # Write your tests here.
+    include("./conversions_tests.jl")
 end
