@@ -10,6 +10,14 @@ Home page: https://www.cityscapes-dataset.com/
 
 
 ### Usage
-```
 
+```
+using CityscapesTools
+
+classnumber2classname(15)      # should give "bus"
+classname2classnumber("bus")   # should give "15"
+
+mapping_20[7]                  # should give "0"
+
+encode_labels(mask)            # maps the classes in mask to 0:18+255 classes; mask is an Int16 array
 ```

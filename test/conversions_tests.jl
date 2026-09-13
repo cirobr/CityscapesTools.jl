@@ -5,3 +5,7 @@
 @test classname2classnumber("traffic light") == 6
 @test classname2classnumber("bus") == 15
 @test classname2classnumber("unknown") == 255  # "unknown" is not a valid class
+
+@test mapping_20[0] == 255
+@test mapping_20[7] == 0
+@test mapping_20[-1] == 0
